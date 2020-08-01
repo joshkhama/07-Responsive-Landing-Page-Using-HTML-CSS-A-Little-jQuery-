@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
+/* CSS Variables */
+:root {
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: #f4f4f4;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   background-color: #252529;
@@ -10,6 +19,36 @@ body {
 
 img {
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+/* Section */
+.section {
+  padding: 2rem 0;
+}
+
+.section-head {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.section h3 {
+  font-size: 2rem;
+}
+
+section#entertainment {
+  background: url(../img/section-bg.jpg) no-repeat bottom/cover;
+  padding: 10rem 0;
+}
+
+.gift-cards {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /* Showcase */
@@ -46,6 +85,55 @@ img {
 
 .lead {
   font-size: 1.3rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 1rem;
+  color: #fff;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--primary-color-hover);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-color-hover);
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: #333;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+.mt {
+  margin-top: 1rem;
 }
 
 /* Navigation */
